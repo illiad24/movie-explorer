@@ -1,0 +1,26 @@
+{
+  "name": "bff",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "codegen": "graphql-codegen --config codegen.ts",
+    "codegen:watch": "graphql-codegen --config codegen.ts --watch"
+  },
+  "type": "module",
+  "dependencies": {
+    "dotenv": "^17.3.1",
+    "graphql": "^16.13.2",
+    "graphql-yoga": "^5.18.1"
+  },
+  "devDependencies": {
+    "@graphql-codegen/cli": "^6.2.1",
+    "@graphql-codegen/typescript": "^5.0.9",
+    "@graphql-codegen/typescript-resolvers": "^5.1.7",
+    "@types/node": "^25.5.0",
+    "tsx": "^4.21.0",
+    "typescript": "^6.0.2"
+  }
+}
